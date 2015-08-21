@@ -1,0 +1,116 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Standard Radio Buttons" />
+
+    <RadioGroup
+        android:id="@+id/standard_radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:padding="20dp" >
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".335"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Yes" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight=".335"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="No" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".335"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Maybe" />
+    </RadioGroup>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="20dp"
+        android:background="#ff000000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fancy Radio Buttons" />
+
+    <RadioGroup
+        android:id="@+id/fancy_radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:padding="20dp" >
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".335"
+            android:background="@drawable/radio_states_green"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Yes"
+            android:textColor="@drawable/radio_text" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight=".335"
+            android:background="@drawable/radio_states_red"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="No"
+            android:textColor="@drawable/radio_text" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".335"
+            android:background="@drawable/radio_states_yellow"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Maybe"
+            android:textColor="@drawable/radio_text" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_states_green"
+        android:text="Button" />
+
+</LinearLayout>
